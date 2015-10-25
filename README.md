@@ -88,8 +88,7 @@ activ <- bind_rows(activity_train, activity_test) %>%
 rm(subject_train, subject_test, activity_train, activity_test)
 ```
 
-### 2. Extracts only the measurements on the mean AND standard deviation for 
-### each measurement. 
+### 2. Extracts only the measurements on the mean AND standard deviation for each measurement. 
 
 With 561 feature names form the features.txt as the column names for the `dat`
 data frame the raw data is quite a mess.  "How messy is it?", you ask.  Let's
@@ -873,8 +872,7 @@ names(dat)
 ## [69] "frequency_body_angular_velocity_jerk_magnitude_standard_deviation"
 ```
 
-### 5. From the data set in step 4, creates a second, independent tidy data set with 
-### the average of each variable for each activity and each subject.
+### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Using the `dplyr` library again, the following code witl `selecet` all of the 
 columns except `activitynum`, `group_by` each `subject` and the name for each
